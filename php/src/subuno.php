@@ -10,7 +10,7 @@
 # about the SUBUNO API at subuno.com. You can download this API at
 # http://github.com/subuno/api/
 
-define("SUBUNO_SERVER_URI" , "http://api.subuno.com/v1/");
+define("SUBUNO_SERVER_URI" , "https://api.subuno.com/v1/");
 
 class SUBUNOAPI {
 /* A client for the SUBUNO API.

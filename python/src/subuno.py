@@ -14,7 +14,7 @@ http://github.com/subuno/api/
 import urllib, urllib2
 import json
 
-SUBUNO_SERVER_URI = "http://api.subuno.com/v1/"
+SUBUNO_SERVER_URI = "https://api.subuno.com/v1/"
 
 class SUBUNOAPI(object):
 	"""A client for the SUBUNO API.
