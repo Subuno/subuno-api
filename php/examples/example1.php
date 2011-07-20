@@ -37,7 +37,6 @@ $result = $api->run(
 );
 
 #result is a php array with keys/value pairs with data returned by api.
-print ($result["action"] . "\n");
-print ($result["ref_code"] . "\n");
+print_r ($result);
 
 ?>

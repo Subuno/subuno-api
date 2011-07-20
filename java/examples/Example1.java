@@ -49,8 +49,7 @@ public class Example1 {
 			);
 
 			// result is a org.json.JSONObject with keys/value pairs with data returned by api.
-			System.out.println(result.get("action"));
-			System.out.println(result.get("ref_code"));
+			System.out.println(result);
 						
 		} catch (SUBUNOAPIError e) {
 			e.printStackTrace();
