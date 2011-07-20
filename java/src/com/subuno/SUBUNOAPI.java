@@ -38,7 +38,7 @@ A client for the SUBUNO API.
 See subuno.com for complete API documentation.
 */
 
-	public static final String SUBUNO_SERVER_URI = "https://app.subuno.com/v1/";
+	public static final String SUBUNO_SERVER_URI = "https://api.subuno.com/v1/";
 
 	private String _apikey = null;
 	private String _server_uri = null;
