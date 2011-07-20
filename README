@@ -1,6 +1,23 @@
-///////////////////////////////////////
-// Copyright 2011 MERS Technologies. //
-///////////////////////////////////////
+#####################################
+# Copyright 2011 MERS Technologies. #
+#####################################
 
-API library for Subuno in various languages.
-See example usages in appropriate directories.
+API libraries for Subuno API in various languages.
+
+See example usages inside directories for example usage.
+
+To execute examples:
+
+python example1.py
+
+php example1.php
+
+javac Example1.java
+java Example1
+
+Just make sure the paths are correct so you can access the dependent libraries (inside "src" under each directory).
+
+Dependencies:
+--The Java API depends on classes from org.json.*
+--The PHP API requires cURL.
+--The Python API requires json module (Python 2.6 or 2.7 will be fine).
