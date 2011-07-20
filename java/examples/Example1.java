@@ -24,7 +24,6 @@ public class Example1 {
 		data.put("email"           , "john.doe@domain.com");
 		data.put("company"         , "Doe LLC");
 		data.put("price"           , "50.0");
-		data.put("shipping_method" , "day1");
 		data.put("bin"             , "480128");
 
 		data.put("bill_street1"    , "12 East 71th St");

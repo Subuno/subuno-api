@@ -15,7 +15,6 @@ result = SUBUNOAPI().run(
 		"email"           : "john.doe@domain.com",
 		"company"         : "Doe LLC",
 		"price"           : "50.0",
-		"shipping_method" : "day1",
 		"bin"             : "480128",
 
 		"bill_street1"    : "12 East 71th St",
@@ -35,5 +34,4 @@ result = SUBUNOAPI().run(
 )
 
 #result is a python dictionary with keys/value pairs with data returned by api.
-print result["action"]
-print result["ref_code"]
+print result
