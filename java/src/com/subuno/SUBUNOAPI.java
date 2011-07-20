@@ -12,7 +12,7 @@ http://github.com/subuno/api/
 
 package com.subuno;
 
-import java.net.HttpURLConnection;
+import javax.net.ssl.HttpsURLConnection;
 import java.net.URL;
 import java.net.MalformedURLException;
 import java.net.URLEncoder;
@@ -38,7 +38,7 @@ A client for the SUBUNO API.
 See subuno.com for complete API documentation.
 */
 
-	public static final String SUBUNO_SERVER_URI = "https://api.subuno.com/v1/";
+	public static final String SUBUNO_SERVER_URI = "https://app.subuno.com/v1/";
 
 	private String _apikey = null;
 	private String _server_uri = null;
@@ -105,19 +105,19 @@ See subuno.com for complete API documentation.
 			System.out.println(url);
 
 			//perform request
-			HttpURLConnection connection = null;
+			HttpsURLConnection connection = null;
 			JSONObject json = null;
 			String line = null;
 
 			try {
-				connection = (HttpURLConnection)url.openConnection();
+				connection = (HttpsURLConnection)url.openConnection();
 				connection.setRequestMethod("GET");
 				connection.connect();				
 
 				json = new JSONObject(new JSONTokener(new InputStreamReader(connection.getInputStream())));
 
 			} catch (IOException e) {
-				throw new SUBUNOAPIError("Server returned error or access denied. '"+e.toString()+"'");
+				throw new SUBUNOAPIError("Server error or access denied. '"+e.toString()+"'");
 			} catch (JSONException e) {
 				throw new SUBUNOAPIError("Value doesn't convert to json object. '"+e.toString()+"'");
 			}
