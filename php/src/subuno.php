@@ -50,7 +50,7 @@ class SUBUNOAPI {
 			
 			$url = $this->_server_uri . "?" . $urlencoding;
 						
-			echo($url . "\n");
+			#echo($url . "\n");
 			
 			$ch = curl_init();
 			curl_setopt($ch, CURLOPT_URL, $url);

@@ -12,10 +12,13 @@ http://github.com/subuno/api/
 
 package com.subuno;
 
-import javax.net.ssl.HttpsURLConnection;
 import java.net.URL;
 import java.net.MalformedURLException;
 import java.net.URLEncoder;
+
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.SSLSession;
+import javax.net.ssl.HostnameVerifier;
 
 import java.util.Iterator;
 import java.util.HashMap;
@@ -102,7 +105,7 @@ See subuno.com for complete API documentation.
 				e.printStackTrace();
 			}
 
-			System.out.println(url);
+			//System.out.println(url);
 
 			//perform request
 			HttpsURLConnection connection = null;
@@ -111,7 +114,9 @@ See subuno.com for complete API documentation.
 
 			try {
 				connection = (HttpsURLConnection)url.openConnection();
-				connection.setRequestMethod("GET");
+				//connection.setDoInput(true);
+				//connection.setRequestMethod("GET");
+				//connection.setHostnameVerifier(new LiberalHostnameVerifier());
 				connection.connect();				
 
 				json = new JSONObject(new JSONTokener(new InputStreamReader(connection.getInputStream())));
@@ -127,4 +132,12 @@ See subuno.com for complete API documentation.
 			throw new SUBUNOAPIError("API key not set.");
 		}
 	}
+	
+	public static class LiberalHostnameVerifier implements HostnameVerifier {
+	    public boolean verify(String hostname, SSLSession session) {
+	        return true;
+	    }
+	}
+	
 }
+

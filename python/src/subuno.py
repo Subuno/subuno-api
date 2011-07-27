@@ -51,7 +51,8 @@ class SUBUNOAPI(object):
 			url = "%s?%s" % (self._server_uri, urlencoding)
 			
 			#perform request
-			print url
+
+			#print url
 			request = urllib2.Request(url = url)
 
 			try:
