@@ -53,8 +53,6 @@ public class Example1 {
 						
 		} catch (SUBUNOAPIError e) {
 			e.printStackTrace();
-		} catch (JSONException e) {
-			e.printStackTrace();			
 		}
 	}
 
