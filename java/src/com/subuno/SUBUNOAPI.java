@@ -114,9 +114,6 @@ See subuno.com for complete API documentation.
 
 			try {
 				connection = (HttpsURLConnection)url.openConnection();
-				//connection.setDoInput(true);
-				//connection.setRequestMethod("GET");
-				//connection.setHostnameVerifier(new LiberalHostnameVerifier());
 				connection.connect();				
 
 				json = new JSONObject(new JSONTokener(new InputStreamReader(connection.getInputStream())));
@@ -131,12 +128,6 @@ See subuno.com for complete API documentation.
 		} else {
 			throw new SUBUNOAPIError("API key not set.");
 		}
-	}
-	
-	public static class LiberalHostnameVerifier implements HostnameVerifier {
-	    public boolean verify(String hostname, SSLSession session) {
-	        return true;
-	    }
 	}
 	
 }
