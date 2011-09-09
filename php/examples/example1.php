@@ -40,7 +40,7 @@ $result = $api->run(
 			custom2         => "second custom value",
 			custom3         => "third custom value",
 			issuer_phone    => "18667750556",
-			source          => "miva"
+			source          => "affiliate_code_here"
 		)
 );
 

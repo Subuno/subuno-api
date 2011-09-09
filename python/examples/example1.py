@@ -37,8 +37,9 @@ result = SUBUNOAPI().run(
 		"custom2"         : "second custom value",
 		"custom3"         : "third custom value",
 		"issuer_phone"    : "18667750556",
-		"source"          : "miva",
+		"source"          : "affiliate_code_here",
 	},
+	server_uri = "http://127.0.0.1:8000/v1/"
 )
 
 #result is a python dictionary with keys/value pairs with data returned by api.

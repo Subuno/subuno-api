@@ -46,7 +46,7 @@ public class Example1 {
 		data.put("custom2"         , "second custom value");
 		data.put("custom3"         , "third custom value");
 		data.put("issuer_phone"    , "18667750556");
-		data.put("source"          , "miva");
+		data.put("source"          , "affiliate_code_here");
 
 		try {
 			JSONObject result = new SUBUNOAPI().run(
