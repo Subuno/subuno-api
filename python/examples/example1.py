@@ -30,6 +30,14 @@ result = SUBUNOAPI().run(
 		"ship_state"      : "NY",
 		"ship_country"    : "US",
 		"ship_zip"        : "10021",
+
+		"avs_response"    : "X",
+		"ccv_response"    : "M",
+		"custom1"         : "first custom value",
+		"custom2"         : "second custom value",
+		"custom3"         : "third custom value",
+		"issuer_phone"    : "18667750556",
+		"source"          : "miva",
 	},
 )
 

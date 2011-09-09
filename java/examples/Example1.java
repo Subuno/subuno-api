@@ -40,6 +40,14 @@ public class Example1 {
 		data.put("ship_country"    , "US");
 		data.put("ship_zip"        , "10021");
 
+		data.put("avs_response"    , "X");
+		data.put("ccv_response"    , "M");
+		data.put("custom1"         , "first custom value");
+		data.put("custom2"         , "second custom value");
+		data.put("custom3"         , "third custom value");
+		data.put("issuer_phone"    , "18667750556");
+		data.put("source"          , "miva");
+
 		try {
 			JSONObject result = new SUBUNOAPI().run(
 				// apikey
