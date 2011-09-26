@@ -19,5 +19,8 @@ Just make sure the paths are correct so you can access the dependent libraries (
 
 Dependencies:
 --The Java API depends on classes from org.json.*
+  (https://github.com/douglascrockford/JSON-java)
 --The PHP API requires cURL.
+  (http://php.net/manual/en/book.curl.php)
 --The Python API requires json module (Python 2.6 or 2.7 will be fine).
+  (http://docs.python.org/library/json.html)
