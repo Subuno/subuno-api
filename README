@@ -15,6 +15,8 @@ php example1.php
 javac Example1.java
 java Example1
 
+C#: open "cs" solution, set "Example" project as startup project, build and run
+
 Just make sure the paths are correct so you can access the dependent libraries (inside "src" under each directory).
 
 Dependencies:
@@ -24,3 +26,4 @@ Dependencies:
   (http://php.net/manual/en/book.curl.php)
 --The Python API requires json module (Python 2.6 or 2.7 will be fine).
   (http://docs.python.org/library/json.html)
+--The .NET API requires .NET 4.0 framework
